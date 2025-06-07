@@ -9,3 +9,9 @@ week01/add2a.o: week01/add2a.cpp
 
 hello: week01/hello.cpp
 	g++ -o hello week01/hello.cpp
+
+sum: week01/d1.cpp
+	g++ -o sum week01/d1.cpp
+
+namespace1: week01/namespace1.cpp
+	g++ -o namespace1 week01/namespace1.cpp
