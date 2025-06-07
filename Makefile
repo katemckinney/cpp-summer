@@ -1,8 +1,11 @@
-hello2: hello2.o add2.o
-	g++ -o hello2 hello2.o add2.o
+hello2: week01/hello2a.o week01/add2a.o
+	g++ -o hello2 week01/hello2a.o week01/add2a.o
 
-hello2.o: hello2.cpp
-	g++ -c hello2.cpp
+week01/hello2a.o: week01/hello2a.cpp
+	g++ -c week01/hello2a.cpp -o week01/hello2a.o
 
-add2.o: add2.cpp
-	g++ -c add2.cpp
+week01/add2a.o: week01/add2a.cpp
+	g++ -c week01/add2a.cpp -o week01/add2a.o
+
+hello: week01/hello.cpp
+	g++ -o hello week01/hello.cpp
