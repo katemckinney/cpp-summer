@@ -30,3 +30,6 @@ namespace2:week01/namespace2.cpp
 
 namespace3:week01/namespace3.cpp
 	g++ -o namespace3 week01/namespace3.cpp
+
+homework2: week01/homework2.cpp
+	g++ -o homework2 week01/homework2.cpp
