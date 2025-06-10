@@ -11,7 +11,6 @@ hello: week01/hello.cpp
 	g++ -o hello week01/hello.cpp
 
 sum: week01/d1.cpp
-
 	g++ -o sum week01/d1.cpp
 
 namespace1: week01/namespace1.cpp
@@ -25,3 +24,9 @@ week01/main.o: week01/main.cpp week01/mymath1.h
 
 week01/mymath1.o: week01/mymath1.cpp week01/mymath1.h
 	g++ -c week01/mymath1.cpp -o week01/mymath1.o
+
+namespace2:week01/namespace2.cpp
+	g++ -o namespace2 week01/namespace2.cpp
+
+namespace3:week01/namespace3.cpp
+	g++ -o namespace3 week01/namespace3.cpp
