@@ -33,3 +33,6 @@ namespace3:week01/namespace3.cpp
 
 homework2: week01/homework2.cpp
 	g++ -o homework2 week01/homework2.cpp
+
+signedchar: week02/intro_ex2.cpp
+	g++ -o signedchar week02/intro_ex2.cpp
