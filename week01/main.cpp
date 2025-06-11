@@ -1,6 +1,8 @@
 #include "mymath1.h"
 #include<iostream> 
 
+//Uses doSum (calls it); no declaration/definition inside
+
 using namespace std ;
 using namespace mine ;
 

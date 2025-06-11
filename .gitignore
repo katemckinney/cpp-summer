@@ -1,12 +1,2 @@
 *.o
-hello
-hello2
-namespace1
-sum
-globalvar
-namespace1
-namespace2
-namespace3
-debug
-homework2
-signedchar
+*.x
