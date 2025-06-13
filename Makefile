@@ -1,9 +1,9 @@
 # === Compiler Settings ===
 CXX = g++
-CPPFLAGS = -Iinclude -Wall
+CPPFLAGS = -Iinclude -Wall -Wconversion
 CXXFLAGS = -std=c++17
 
-all: bin/char.x bin/hello.x bin/hello2a.x bin/sum.x bin/localvar.x bin/homework2.x bin/header.x bin/debug.x bin/namespace2.x bin/namespace3.x
+all: bin/type1.x bin/char.x bin/hello.x bin/hello2a.x bin/sum.x bin/localvar.x bin/homework2.x bin/header.x bin/debug.x bin/namespace2.x bin/namespace3.x
 
 # === Example 1: hello2a.cpp and add2a.cpp: compiling to object files===
 build/hello2a.o: week01/hello2a.cpp
@@ -30,6 +30,11 @@ bin/header.x: build/main.o build/mymath1.o
 # === Example 3: char and uchar explanation ===
 
 bin/char.x: week02/char.cpp
+	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -o $@ $<
+
+# === Example 4: type conversion practice ===
+
+bin/type1.x: week02/type1.cpp
 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -o $@ $<
 
 # === Individual examples (no linking) ===
