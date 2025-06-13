@@ -17,9 +17,9 @@ int main()
 	return  0  ;
 }
 
-*/The least significant byte of 2500 (1001 1100 0100 -> 1100 0100) corresponds to unsigned char 196 (2500 mod256), or char -60./* 
+/*The least significant byte of 2500 (1001 1100 0100 -> 1100 0100) corresponds to unsigned char 196 (2500 mod256), or char -60.
 
-*/Size of char : 1 byte
+Size of char : 1 byte
 Size of int : 4 bytes
 Size of short int : 2 bytes
 Size of long int : 8 bytes
