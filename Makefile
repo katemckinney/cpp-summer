@@ -3,7 +3,7 @@ CXX = g++
 CPPFLAGS = -Iinclude -Wall -Wconversion
 CXXFLAGS = -std=c++17
 
-all: bin/scope_ex.x bin/scope.x bin/type1.x bin/char.x bin/hello.x bin/hello2a.x bin/sum.x bin/localvar.x bin/homework2.x bin/header.x bin/debug.x bin/namespace2.x bin/namespace3.x
+all: bin/scope_ex.x bin/scope.x bin/type1.x bin/char.x bin/hello.x bin/hello2a.x bin/sum.x bin/localvar.x bin/cin.x bin/homework2.x bin/header.x bin/debug.x bin/namespace2.x bin/namespace3.x
 
 # === Example 1: hello2a.cpp and add2a.cpp: compiling to object files===
 build/hello2a.o: week01/hello2a.cpp
@@ -70,3 +70,5 @@ bin/namespace2.x: week01/namespace2.cpp
 bin/namespace3.x: week01/namespace3.cpp
 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -o $@ $<
 
+bin/cin.x: week02/cin_cout.cpp
+	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -o $@ $<
