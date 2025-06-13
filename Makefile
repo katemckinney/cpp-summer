@@ -3,7 +3,7 @@ CXX = g++
 CPPFLAGS = -Iinclude -Wall -Wconversion
 CXXFLAGS = -std=c++17
 
-all: bin/type1.x bin/char.x bin/hello.x bin/hello2a.x bin/sum.x bin/localvar.x bin/homework2.x bin/header.x bin/debug.x bin/namespace2.x bin/namespace3.x
+all: bin/scope_ex.x bin/scope.x bin/type1.x bin/char.x bin/hello.x bin/hello2a.x bin/sum.x bin/localvar.x bin/homework2.x bin/header.x bin/debug.x bin/namespace2.x bin/namespace3.x
 
 # === Example 1: hello2a.cpp and add2a.cpp: compiling to object files===
 build/hello2a.o: week01/hello2a.cpp
@@ -32,10 +32,21 @@ bin/header.x: build/main.o build/mymath1.o
 bin/char.x: week02/char.cpp
 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -o $@ $<
 
-# === Example 4: type conversion practice ===
+# === Example 4: type conversion, data loss ===
 
 bin/type1.x: week02/type1.cpp
 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -o $@ $<
+
+
+# === Example 5: Variable scope ===
+
+bin/scope.x: week02/scope.cpp
+	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -o $@ $<
+
+# === Example 5: Variable scope part ii ===
+bin/scope_x.x: week02/scope_x.cpp
+	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -o $@ $<
+
 
 # === Individual examples (no linking) ===
 bin/hello.x: week01/hello.cpp
