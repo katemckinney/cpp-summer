@@ -4,7 +4,7 @@ CPPFLAGS = -Iinclude -Wall -Wconversion
 CXXFLAGS = -std=c++17
 
 all: \
-bin/if.x bin/if1.x bin/if2.x bin/if3.x bin/if4.x bin/if5.x \
+bin/else.x bin/ifelse.x bin/if.x bin/if1.x bin/if2.x bin/if3.x bin/if4.x bin/if5.x \
 bin/bool1.x bin/bool.x bin/defineheader.x bin/scope_ex.x bin/scope.x \
 bin/type1.x bin/char.x bin/hello.x bin/hello2a.x bin/sum.x \
 bin/localvar.x bin/cin.x bin/homework2.x bin/header.x bin/debug.x \
@@ -105,4 +105,10 @@ bin/if4.x: week02/if4.cpp
 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -o $@ $<
 
 bin/if5.x: week02/if5.cpp
+	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -o $@ $<
+
+bin/ifelse.x: week02/ifelse.cpp
+	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -o $@ $<
+
+bin/else.x: week02/else.cpp
 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -o $@ $<
