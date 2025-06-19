@@ -5,7 +5,7 @@ CXXFLAGS = -std=c++17
 
 all: \
 bin/prefix1.x bin/prefix.x bin/else.x bin/ifelse.x bin/if.x bin/if1.x \
-bin/while1.x bin/while.x bin/if2.x bin/if3.x bin/if4.x bin/if5.x \
+bin/while2.x bin/while1.x bin/while.x bin/if2.x bin/if3.x bin/if4.x bin/if5.x \
 bin/bool1.x bin/bool.x bin/defineheader.x bin/scope_ex.x bin/scope.x \
 bin/type1.x bin/char.x bin/hello.x bin/hello2a.x bin/sum.x \
 bin/localvar.x bin/cin.x bin/homework2.x bin/header.x bin/debug.x \
@@ -124,4 +124,7 @@ bin/while.x: week02/while.cpp
 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -o $@ $<
 
 bin/while1.x: week02/while1.cpp
+	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -o $@ $<
+
+bin/while2.x: week02/while2.cpp
 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -o $@ $<
