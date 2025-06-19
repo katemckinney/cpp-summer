@@ -4,7 +4,8 @@ CPPFLAGS = -Iinclude -Wall -Wconversion
 CXXFLAGS = -std=c++17
 
 all: \
-bin/forloop.x bin/dowhile3.x bin/dowhile2.x bin/dowhile1.x bin/dowhile.x \
+bin/forloop2.x \
+bin/forloop1.x bin/forloop.x bin/dowhile3.x bin/dowhile2.x bin/dowhile1.x bin/dowhile.x \
 bin/prefix1.x bin/prefix.x bin/else.x bin/ifelse.x bin/if.x bin/if1.x \
 bin/while2.x bin/while1.x bin/while.x bin/if2.x bin/if3.x bin/if4.x bin/if5.x \
 bin/bool1.x bin/bool.x bin/defineheader.x bin/scope_ex.x bin/scope.x \
@@ -143,4 +144,10 @@ bin/dowhile3.x: week02/dowhile3.cpp
 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -o $@ $<
 
 bin/forloop.x: week02/forloop.cpp
+	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -o $@ $<
+
+bin/forloop1.x: week02/forloop1.cpp
+	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -o $@ $<
+
+bin/forloop2.x: week02/forloop2.cpp
 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -o $@ $<
