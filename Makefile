@@ -4,7 +4,7 @@ CPPFLAGS = -Iinclude -Wall -Wconversion
 CXXFLAGS = -std=c++17
 
 all: \
-bin/forloop2.x \
+bin/hw2.x bin/C1.x bin/C.x bin/forloop2.x \
 bin/forloop1.x bin/forloop.x bin/dowhile3.x bin/dowhile2.x bin/dowhile1.x bin/dowhile.x \
 bin/prefix1.x bin/prefix.x bin/else.x bin/ifelse.x bin/if.x bin/if1.x \
 bin/while2.x bin/while1.x bin/while.x bin/if2.x bin/if3.x bin/if4.x bin/if5.x \
@@ -150,4 +150,13 @@ bin/forloop1.x: week02/forloop1.cpp
 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -o $@ $<
 
 bin/forloop2.x: week02/forloop2.cpp
+	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -o $@ $<
+
+bin/C.x: week02/C.cpp
+	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -o $@ $<
+
+bin/C1.x: week02/C1.cpp
+	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -o $@ $<
+
+bin/hw2.x: week02/hw2.cpp
 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -o $@ $<
