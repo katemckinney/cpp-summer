@@ -15,7 +15,7 @@ bool isPrime(int t)        //function definition, takes integer as input, return
 
 	for( int i1 = 2 ; i1 < t ; i1++)
 	{if (t % i1 == 0)
-		return false;
+		return false; //if t % i1 =/= 0, the loop repeats until test condition is false 
 	}
 	return true;
 }
