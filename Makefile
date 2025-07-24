@@ -12,7 +12,7 @@ bin/bool1.x bin/bool.x bin/defineheader.x bin/scope_ex.x bin/scope.x \
 bin/type1.x bin/char.x bin/hello.x bin/hello2a.x bin/sum.x \
 bin/localvar.x bin/cin.x bin/homework2.x bin/header.x bin/debug.x \
 bin/hw4.x bin/array.x bin/hw3.x bin/passbyreference.x bin/namespace2.x bin/namespace3.x \
-bin/casting.x \
+bin/ptr1.x bin/casting.x \
 
 # === Example 1: hello2a.cpp and add2a.cpp: compiling to object files===
 build/hello2a.o: week01/hello2a.cpp
@@ -181,4 +181,7 @@ bin/hw4.x: week03/hw4.cpp
 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -o $@ $<
 
 bin/casting.x: week04/casting.cpp
+	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -o $@ $<
+
+bin/ptr1.x: week04/ptr1.cpp
 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -o $@ $<
